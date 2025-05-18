@@ -276,7 +276,8 @@ jobs:
           # General template for customizing submodule LoopKit 
           # Copy url from a GitHub commit or pull request and insert below, and remove the "#" sign from the beginning of the line to activate:
           #curl url_to_github_commit.patch | git apply --directory=LoopKit -v --whitespace=fix
-          curl https://github.com/gregwaehner-org/LoopKit/commit/8653f564d269b5440888baa70a4d33f4fb40772f.patch | git apply --directory=LoopKit -v --whitespace=fix
+          # Commented out GCW customization for DIA to be back to normal 360
+          #curl https://github.com/gregwaehner-org/LoopKit/commit/8653f564d269b5440888baa70a4d33f4fb40772f.patch | git apply --directory=LoopKit -v --whitespace=fix
 
           # The lines below add the customizations listed using the CustomizationSelect script
           # The "\" is a continuation character 
