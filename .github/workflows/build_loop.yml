@@ -277,8 +277,6 @@ jobs:
           # General template for customizing submodule LoopKit 
           # Copy url from a GitHub commit or pull request and insert below, and remove the "#" sign from the beginning of the line to activate:
           #curl url_to_github_commit.patch | git apply --directory=LoopKit -v --whitespace=fix
-          # Commented out GCW customization for DIA to be back to normal 360
-          #curl https://github.com/gregwaehner-org/LoopKit/commit/8653f564d269b5440888baa70a4d33f4fb40772f.patch | git apply --directory=LoopKit -v --whitespace=fix
 
           # The lines below add the customizations listed using the CustomizationSelect script
           # The "\" is a continuation character 
@@ -301,6 +299,9 @@ jobs:
           # and make sure to specify the submodule by setting "--directory=(submodule_name)".
           # Several patches may be added per submodule.
           # Adding comments (#) may be useful to easily tell the individual patches apart.
+
+          # Add patch for LoopKit DIA to 330 (branch 330-20250802)
+          curl https://github.com/gregwaehner/LoopKit/commit/b1bdebda44874857b2206f509b6d06b8b23165ed.patch | git apply --directory=LoopKit -v --whitespace=fix
 
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
