@@ -302,7 +302,7 @@ jobs:
           # Adding comments (#) may be useful to easily tell the individual patches apart.
           
           # Add patch for LoopKit DIA to 330
-          curl https://github.com/gregwaehner-org/LoopKit/commit/b1bdebda44874857b2206f509b6d06b8b23165ed.patch | git apply --directory=LoopKit -v --whitespace=fix
+          curl https://github.com/gregwaehner-org/LoopKit/commit/f9a58a86fca1824de1ac3e4e4923b4be2cc2ea9b.patch | git apply --directory=LoopKit -v --whitespace=fix
           
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
